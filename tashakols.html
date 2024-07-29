@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = 'UTF-8'>
+        <meta name = 'viewport' content = 'width=device-width, initial-scale=1.0'>
+        <title>Ershad Damavand University</title>
+        <link rel = 'stylesheet' href = 'headerstyle.css'>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://kit.fontawsome.com/a076d05399js"></script>
+        <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+        <link href = 'https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css' rel = 'stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body {
+                font-family: 'Poppins', sans-serif
+            }
+
+            h1 {
+                font-family: 'Poppins', sans-serif;
+                font-size: 2rem;
+                font-weight: 700;
+                color: rgb(35, 35, 85);
+                text-align: center;
+                position: relative;
+                top: -456px;
+            }
+            
+            .tashakols-container {
+                font-family: 'Poppins', sans-serif;
+                width: 75%;
+                max-height: 900px;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                z-index: -1;
+            }
+
+            .card {
+                border: 1.5px solid rgba(36, 44, 42, 0.26);
+                border-radius: 20px;
+                background: linear-gradient(45deg, #44e2c8, #0f7866);
+                text-align: center;
+                padding: 20px;
+                height: 230px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center; 
+                align-items: center;
+                z-index: -1;
+            }
+
+            .card img {
+                border-radius: 20px;
+                object-fit: fill;
+                height: 140px;
+                width: 105%;
+                margin-top: -5px;
+            }
+
+            .card-title{
+                position: relative;
+                top: -72px;
+                font-size: 16px;
+                font-weight: 600;
+                color: black;
+                text-decoration: none !important;
+                transition: color .3s ease-in;
+                --link-1: #2c6e4f;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 100%;
+                    width: 100%;
+                    height: 3px;
+                    background-color: var(--link-1);
+                    transform: scaleX(0);
+                    transition: transform .3s ease-in;
+                }	
+                &:hover {
+                    color: var(--link-1);
+                }
+                &:hover::before {
+                    transform: scaleX(1);
+                }
+            }
+
+            .card-text {
+                position: relative;
+                margin: 20px 0px;
+            }
+            
+            .iframe {
+                width: 100%; 
+                border: none; 
+                height: 600px;
+                z-index: 2;
+            }
+            
+            .tashakols-text { 
+                position: relative;
+                padding: 0.7rem 3rem;
+                text-align: justify;
+                text-align-last: right;
+                font-size: 20px;
+                line-height: 2rem;
+                background-color: #abdbf477;
+                border-radius: 10px;
+                width: 59.1rem;
+                margin: -28rem 9.9rem;
+                z-index: -2;
+            }
+
+            @media screen and (max-width: 768px) {
+                .tashakols-text {
+                    width: 95%;
+                    position: relative;
+                    text-align: justify;
+                    margin: -28rem 1rem;
+                    z-index: -2;
+                }
+
+                .card-text {
+                    position: relative;
+                    top: 65px;
+                }
+            }
+
+
+</style>
+    </head>
+
+    <body>
+        <iframe src="header.html" class = 'iframe'></iframe>
+        <!--tashakols-->
+        <h1 style = 'z-index: -1;'>تشکل های دانشجویی</h1>
+        <p class = 'tashakols-text' style="z-index: -100;">تشکیل کانون‌های مختلف فرهنگی، مذهبی، هنری ازجمله کانون قرآن و عترت، کانون محیط‌زیست، کانون هلال‌احمر، کانون ادبی هنری قلم، کانون تئاتر، کانون موسیقی، کانون عکس و تبلیغات، کانون صنایع‌دستی، کانون ورزشی و ... از جمله وظایف بخش امور فرهنگی و انجمن های دانشجویی می‌باشد. لازم به ذکر است کلیه دانشجویان جهت عضویت در کانون‌های موردعلاقه به واحد فرهنگی مراجعه نموده و با تکمیل فرم درخواست همکاری به‌عنوان "عضو کانون" و یا با ارائه مستندات و سوابق فرهنگی به‌عنوان "مربی" ثبت‌نام می‌نمایند. وظیفه عمده این کانون‌ها مبادرت به انجام فعالیت‌های فرهنگی – هنری متناسب با موضوع هر کانون توسط دانشجویان فعال و علاقه‌مند می‌باشد که به‌صورت خودجوش گرد هم آمده و به اقتضای شرح وظایف هر کانون و تحت نظارت کارشناس امور فرهنگی دانشجویان این موسسه مشغول به فعالیت می‌باشند. اعضای هر یک از کانون‌ها با عضوگیری از میان دانشجویان، فعالیت‌های فرهنگی و هنری را در قالب کارگاه آموزشی، جلسه، همایش، نمایشگاه و ... در موسسه انجام می‌دهند</p>
+    <div class = 'tashakols-container'>
+        <div class = 'row' style = 'margin-top: 30rem;'>
+            <div class = 'col-md-3 col-sm-6 mb-4'>
+                <div class = 'card'>
+                    <img src = 'energy.jpg' class = 'card-img-top' alt = 'مهندسی انرژی'>
+                    <div class = 'card-body'>
+                        <p class = 'card-text'>1399</p> 
+                    </div>
+                </div>
+                <h5><a href = 't.me/Enrgy_Edu' class = 'card-title'>انجمن علمی دانشجویی مهندسی انرژی</a></h5>
+            </div>
+            <div class = 'col-md-3 col-sm-6 mb-4'>
+                <div class = 'card' >
+                    <img src = 'sanaye.jpg' class = 'card-img-top' alt = 'مهندسی صنایع'>
+                    <div class = 'card-body'>
+                        <p class = 'card-text'>1390</p> 
+                    </div>
+                </div>
+                <h5><a href = 't.me/IndustryEDU' class = 'card-title'>انجمن علمی دانشجویی مهندسی صنایع</a></h5>
+            </div>
+            <div class = 'col-md-3 col-sm-6 mb-4'>
+                <div class = 'card'>
+                    <img src = 'computer.jpg' class = 'card-img-top' alt = 'مهندسی کامپیوتر'>
+                    <div class = 'card-body'>
+                        <p class = 'card-text'>1393</p> 
+                    </div>
+                </div>
+                <h5><a href = 't.me/CSSC_EDU' class = 'card-title'>انجمن علمی دانشجویی مهندسی کامپیوتر</a></h5>
+            </div>
+            <div class = 'col-md-3 col-sm-6 mb-4'>
+                <div class = 'card'>
+                    <img src = 'mali.jpg' class = 'card-img-top' alt = 'مهندسی مالی'>
+                    <div class = 'card-body'>
+                        <p class = 'card-text'>1401</p> 
+                    </div>
+                </div>
+                <h5><a href = 't.me/FinancialEngeeringEDU' class = 'card-title'>انجمن علمی دانشجویی مهندسی مالی</a></h5>
+            </div>
+            <div class = 'col-md-3 col-sm-6 mb-4'>
+                <div class = 'card'>
+                    <img src = 'memari.jpg' class = 'card-img-top' alt = 'مهندسی معماری'>
+                    <div class = 'card-body'>
+                        <p class = 'card-text'>1395</p> 
+                    </div>
+                </div>            
+                <h5><a href = 't.me/ArchitectureEDU' class = 'card-title'>انجمن علمی دانشجویی مهندسی معماری</a></h5>
+            </div>
+            <div class = 'col-md-3 col-sm-6 mb-4'>
+                <div class = 'card'>
+                    <img src = 'hesabdari.jpg' class = 'card-img-top' alt = 'حسابداری'>
+                    <div class = 'card-body'>
+                        <p class = 'card-text'>1386</p> 
+                    </div>
+                </div>
+                <h5><a href = 't.me/AccountancyEDU' class = 'card-title'>انجمن علمی دانشجویی حسابداری</a></h5>
+            </div>
+            <div class = 'col-md-3 col-sm-6 mb-4'>
+                <div class = 'card'>
+                    <img src = 'modiriat.jpg' class = 'card-img-top' alt = 'مدیریت'>
+                    <div class = 'card-body'>
+                        <p class = 'card-text'>1392</p> 
+                    </div>
+                </div>
+                <h5><a href = 't.me/managementEDU' class = 'card-title'>انجمن علمی دانشجویی مدیریت</a></h5>
+            </div>
+            <div class = 'col-md-3 col-sm-6 mb-4'>
+                <div class = 'card'>
+                    <img src = 'law.jpg' class = 'card-img-top' alt = 'حقوق'>
+                    <div class = 'card-body'>
+                        <p class = 'card-text'>1392</p> 
+                    </div>
+                </div>
+                <h5><a href = 't.me/law1_EDU' class = 'card-title'>انجمن علمی دانشجویی حقوق</a></h5>
+            </div>
+            <div class = 'col-md-3 col-sm-6 mb-4'>
+                <div class = 'card'>
+                    <img src = 'zaban.jpg' class = 'card-img-top' alt = 'زبان'>
+                    <div class = 'card-body'>
+                        <p class = 'card-text'>1394</p> 
+                    </div>
+                </div>
+                <h5><a href = 't.me/SEA_EDU' class = 'card-title'>انجمن علمی دانشجویی زبان انگلیسی</a></h5>
+            </div>
+            <div class = 'col-md-3 col-sm-6 mb-4'>
+                <div class = 'card'>
+                    <img src = 'basij.jpg' class = 'card-img-top' alt = 'بسیج'>
+                    <div class = 'card-body'>
+                        <p class = 'card-text'>1390</p> 
+                    </div>
+                </div>
+                <h5><a href = 't.me/Meshkatchannel' class = 'card-title'>کانون دانشجویی بسیج </a></h5>
+            </div>
+            <div class = 'col-md-3 col-sm-6 mb-4'>
+                <div class = 'card'>
+                    <img src = 'mohit zist.jpg' class = 'card-img-top' alt = 'محیط زیست'>
+                    <div class = 'card-body'>
+                        <p class = 'card-text'>1397</p> 
+                    </div>
+                </div>
+                <h5><a href = 't.me/MohitzistEDU' class = 'card-title'>کانون دانشجویی حافظان محیط زیست</a></h5>
+            </div>
+            <div class = 'col-md-3 col-sm-6 mb-4'>
+                <div class = 'card'>
+                    <img src = 'helal ahmar.jpg' class = 'card-img-top' alt = 'هلال احمر'>
+                    <div class = 'card-body'>
+                        <p class = 'card-text'>1390</p> 
+                    </div>
+                </div>
+                <h5><a href = 't.me/HelalAhmarEDU' class = 'card-title'>کانون دانشجویی هلال احمر</a></h5>
+            </div>
+            <div class = 'col-md-3 col-sm-6 mb-4'>
+                <div class = 'card'>
+                    <img src = 'honar.jpg' class = 'card-img-top' alt = 'هنر و ادبیات'>
+                    <div class = 'card-body'>
+                        <p class = 'card-text'>1391</p> 
+                    </div>
+                </div>
+                <h5><a href = 't.me/KanonHonarEDU' class = 'card-title'>کانون دانشجویی هنر و ادبیات</a></h5>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<footer dir="rtl"5 style = 'margin-top: 18.5rem; height: 320px;'>
+    <div class="footer-col" style = 'margin-left: 100px; text-align: right; width: 250px;'>  <!--ادرس واحد تهران-->
+        <h4>واحد تهران(مرکزی)</h4>
+        <ul class="footerul">
+            <li><a class="footerlink" href="#">
+                <i class="fas fa-map-marker-alt"></i> 
+                تهران، خیابان انقلاب، ابتدای خیابان وصال 
+                 شیرازی، خیابان شهید رضا نایبی، پلاک 21
+            </a></li>
+            <li><a class="footerlink" href="#">
+                <i class="fas fa-phone"></i> شماره تماس: 07-66483602-021
+            </a></li>
+            <li><a class="footerlink" href="#">
+                <i class="fas fa-at"></i> info-er@e-damavandihe.ac.ir
+            </a></li>
+            <li><a class="footerlink" href="#">
+                <i class="fas fa-mailbox"></i> کد پستی: 1416834311
+            </a></li>
+            <li><a class="footerlink" href="#">
+                <i class="fas fa-fax"></i> فکس :66483608-021
+            </a></li>
+        </ul>
+    </div>
+    <div class="footer-col" style = 'margin: -300px 200px'> <!--گوگل مپ واحد تهران-->
+        <h4>ما را در تهران اینجا پیدا کنید!</h4>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6479.932917180228!2d51.40064!3d35.702443!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e010feed173f9%3A0xdfefa760094d9d05!2sErshad-Damavand%20University!5e0!3m2!1sen!2snl!4v1716932282558!5m2!1sen!2snl" width="200" height="150" style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="footer-col" style = 'margin: 92px 506px; text-align: right; width: 250px;'> <!--ادرس واحد دماوند-->
+        <h4>واحد دماوند<h4>
+        <ul class="footerul">
+            <li><a class="footerlink" href="#">
+                <i class="fas fa-map-marker-alt"></i> دماوند، گیلاوند، روبروی پلیس راه، 
+                ابتدای <br> شهرک گاز، جنب پمپ گاز، خیابان شهید تندگویان
+            </a></li>
+            <li><a class="footerlink" href="#">
+                <i class="fas fa-phone"></i> شماره تماس: 09-76332404-021
+            </a></li> 
+            <li><a class="footerlink" href="#">
+                <i class="fas fa-mailbox"></i> کد پستی: 3971911113
+            </a></li>
+            <li><a class="footerlink" href="#">
+                <i class="fas fa-fax"></i> فکس :76332410-021
+            </a></li>
+        </ul>
+    </div>
+    <div class="footer-col" style = 'margin: -346px 705px;'> <!--گوگل مپ واحد دماوند-->
+        <h4>ما را در دماوند اینجا پیدا کنید!</h4>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d810.1157430015883!2d52.0106831!3d35.6902231!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f91ccda81622881%3A0x2e1cb7877b032eb!2z2K_Yp9mG2LTar9in2Ycg2KfYsdi02KfYryDYr9mF2KfZiNmG2K8gLSDZiNin2K3YryDZvtiz2LHYp9mG!5e0!3m2!1sen!2s!4v1717229661931!5m2!1sen!2s" width="200" height="150" style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    
+    </body>
+</html>

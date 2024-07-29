@@ -1,0 +1,805 @@
+@import url('https://fonts.googlepis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgb(35, 35, 85);
+    text-align: center;
+    padding: 1rem;
+}
+
+span {
+    font-size: 0.9rem;
+    color: #757373;
+}
+
+.navre {
+    display: flex;
+    flex-direction: row;
+    padding: 4vw 8vw;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.15);
+}
+
+
+.omoor{ 
+    padding: 0.7rem 3rem;
+    text-align: justify;
+    line-height: 2rem;
+    background-color: #abdbf477;
+    border-radius: 10px;
+    width: 48rem;
+    /*margin: 0rem 5rem;*/
+    position: absolute;
+    left: 29rem;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .omoor {
+        width: 95%;
+        position: static;
+        text-align: justify;
+        margin: 1rem;
+    }
+}
+
+h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: rgb(35, 35, 85);
+}
+
+.par2{   
+    padding: 0.5rem 5rem;
+    text-align: right;
+    line-height: 1.9rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: rgb(35, 35, 85);
+}
+
+.table-fill {
+    background: #84f2de;
+    border-radius: 8px;
+    border-collapse: collapse;
+    margin: auto;
+    margin-top: 10px;
+    max-width: 1000px;
+    min-width: 420px;
+    padding: 5px;
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    animation: float 5s infinite;
+    line-height: 20px;
+}
+
+th {
+    border-bottom: 2px solid #147a68;
+    border-right: 1px solid #147a68;
+    font-size: 25px;
+    font-weight: 300;
+    padding: 24px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+th:first-child {
+    border-right: none;
+}
+
+th:last-child {
+    border-top-right-radius: 3px;
+}
+
+tr {
+    text-align: center;
+}
+
+tr:nth-child(odd) td {
+    background: #d0f7f1;
+}
+
+tr:nth-child(even) td {
+    background-color: #e1faf6;
+}
+
+tr:hover td,
+tr:focus td {
+    box-shadow: inset 0 -3.25em 0 0 car(--hover);
+    transform: translateY(-0.25em);
+    transition-duration: 500ms;
+    background: #22ceb0;
+    color: white;
+}
+
+tr:last-child td:first-child {
+    border-bottom-left-radius: 3px;
+}
+
+th:last-child td:last-child {
+    border-bottom-right-radius: 3px;
+}
+ 
+td {
+    background: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 300;
+    font-size: 23px;
+    line-height: 25px;
+    text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+    border-left: 1px solid #147a68;
+}
+  
+td:last-child {
+    border-left: none;
+}
+  
+h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: rgb(35, 35, 85);
+}
+
+.links1 {
+    padding: 0.7rem 3rem;
+    text-align: center;
+    line-height: 2rem;
+    background-color: #abdbf477;
+    border-radius: 10px;
+    width: 25rem;
+    margin: 0rem 0rem;
+    position: absolute;
+    left: 2rem;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .links1 {
+        width: 95%;
+        position: static;
+        text-align: center;
+        margin: 1rem;
+    }
+}
+
+.link1 {
+    text-decoration: none;
+    color:#000000;
+	position: relative;
+	transition: color .3s ease-in;
+    --link-1: #2c6e4f;
+	&::before {
+		content: '';
+		position: absolute;
+		top: 100%;
+		width: 100%;
+		height: 3px;
+		background-color: var(--link-1);
+		transform: scaleX(0);
+		transition: transform .3s ease-in;
+	}	
+	&:hover {
+		color: var(--link-1);
+	}
+	&:hover::before {
+		transform: scaleX(1);
+	}	
+}
+
+.contact {
+    padding: 0.7rem 3rem;
+    text-align: center;
+    line-height: 2rem;
+    background-color: #abdbf477;
+    border-radius: 10px;
+    width: 25rem;
+    height: 11.31rem;
+    margin: 0rem 0rem;
+    position: absolute;
+    left: 2rem;
+    top: 26rem;
+}
+
+@media screen and (max-width: 768px) {
+    .contact {
+        width: 95%;
+        position: static;
+        text-align: center;
+        margin: 1rem;
+    }
+}
+
+h5 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: rgb(35, 35, 85);
+}
+
+.instagram {
+    font-size: 30px;
+    width: 3rem;
+    height: 3rem;
+    color: white;
+    --hover:#ee653d;
+    background: radial-gradient(circle at 30% 110%,
+    #ffdb8b 0%,
+    #ee653d 25%,
+    #d42e81 50%,
+    #a237b6 75%,
+    #3e57bc 100%);
+    border-radius: 37px;
+    border: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 70%;
+    top: 50%;
+    transition-duration: 500ms;
+}
+
+.instagram:hover,
+.instagram:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+  transition-duration: 500ms;
+}
+
+@media screen and (max-width: 768px) {
+    .instagram {
+        position: relative;
+        text-align: center;
+        right: 80%;
+        top: 35%;
+    }
+}
+
+.gmail {
+    font-size: 25px;
+    width: 2.9rem;
+    height: 2.9rem;
+    color: white;
+    --hover: #c71610;
+    background: #c71610;
+    border-radius: 37px;
+    border: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 44.5%;
+    top: 50.5%;
+    transition-duration: 500ms;
+}
+
+.gmail:hover,
+.gmail:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+  transition-duration: 500ms;
+}
+
+@media screen and (max-width: 768px) {
+    .gmail {
+        position: relative;
+        text-align: center;
+        right: 44%;
+        top: 5%;
+    }
+}
+
+.phone {
+    font-size: 30px;
+    width: 3rem;
+    height: 3rem;
+    color: white;
+    --hover: #009688;
+    background: #009688;
+    border-radius: 37px;
+    border: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 19%;
+    top: 50%;
+    transition-duration: 500ms;
+}
+
+.phone:hover,
+.phone:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+  transition-duration: 500ms;
+}
+
+@media screen and (max-width: 768px) {
+    .phone {
+        position: relative;
+        text-align: center;
+        right: 8%;
+        top: -25%;
+    }
+}
+
+footer {
+        margin-top: 66rem;
+        margin-bottom: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        position: relative;
+        top: 160rem;
+    }
+}
+.next-button {
+    position: relative;
+    top: 3ch;
+    right: 150px;
+}
+
+@media screen and (max-width: 768px) {
+    .next-button {
+        position: relative;
+        top: 0%;
+        right: 0%;
+    }
+}
+
+.payan-name {
+    position: relative;
+    padding: 19px 0px;
+    margin: auto;
+    width: 750px;
+}
+
+@media screen and (max-width: 768px) {
+    .payan-name {
+        padding: 63px 0px;
+        width: 50%;
+        margin: 0 23%;
+    }
+}
+
+.payan-name-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    scale: 1.3;
+}
+
+@media screen and (max-width: 768px) {
+    .payan-name-card {
+        display: grid;
+        /*scale: 1.7;*/
+        gap: 17px;
+        grid-template-columns: repeat(2, 150px);
+    }
+}
+
+.card {
+    position: relative;
+    left: 0;
+    width: 130px;
+    height: 120px;
+    background: linear-gradient(45deg, #44e2c8, #0f7866);
+    border-radius: 8px;
+    transition: 1000ms all;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);
+    outline: 1px solid var(--background);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transform-origin: center;
+    box-shadow: 0 0 20px #00fffc;
+    margin: 0;
+}
+
+.card:hover figcaption {
+    font-size: 0.7rem;
+    height: 120px;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom,
+    #147a68 0%,
+    #1ca68e 100%);
+    color: white;
+    margin: 0px;
+}
+
+.card:hover~.card {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+h6 {
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+h7 {
+    color:rgb(35, 35, 85);
+    font-size: 30px;
+    font-weight: 800;
+    margin: auto;
+}
+
+.payan-name-tables {
+    position: relative;
+    margin: -100px auto;
+    width: 100%;
+    /*top: 70px;
+    left: 26.5px;*/
+    scale: 0.8;
+    
+}
+
+@media screen and (max-width: 768px) {
+    h7 {
+        position: relative;
+        left: -60%;
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .payan-name-tables {
+        position: absolute;
+        margin-left: 65%;
+        width: 80%;
+    }
+}
+
+.btn-circle-download {
+    position: relative;
+    height: 43px;
+    width: 43px;
+    margin: auto;
+    border-radius: 100%;
+    background-color: #1ead96;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+
+.btn-circle-download:after {
+    content: '';
+    position: relative;
+    width: 200%;
+    height: 100%;
+    background-image: linear-gradient(100deg , rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0));
+    transform: translateX(-100%);
+}
+
+.btn-circle-download svg {
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+}
+
+.btn-circle-download svg#border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    stroke: none;
+    stroke-dasharray: 144;
+    stroke-dashoffset: 144;
+    transition: all 0.9s linear;
+}
+
+.btn-circle-download svg#arrow {
+    position: absolute;
+    top: 11px;
+    left: 14.5px;
+    stroke: white;
+    transition: all 0.2s ease;
+}
+
+.btn-circle-download svg#check {
+    position: relative;
+    top: 17px;
+    left: 13px;
+    transform: scale(0);
+    transition: all 0.2s ease;
+} 
+  
+.btn-circle-download:hover {
+    background: white;
+}
+  
+.btn-circle-download:hover svg#arrow path,
+.btn-circle-download:hover svg#arrow polyline {
+    stroke: #178a77;
+}
+  
+.btn-circle-download.load {
+    background: #11f1cb;
+}
+  
+.btn-circle-download.load svg#arrow path,
+.btn-circle-download.load svg#arrow polyline {
+    stroke: white;
+}
+  
+.btn-circle-download.load svg#border {
+    stroke: white;
+    stroke-dasharray: 144;
+    stroke-dashoffset: 0;
+}
+
+.btn-circle-download.done {
+    background: #11f1cb;
+    animation: rubberBand 0.8s;
+}
+  
+.btn-circle-download.done:after {
+    transform: translateX(50%);
+    transition: transform 0.4s ease;
+    transition-delay: 0.2s;
+}
+  
+.btn-circle-download.done svg#border,
+.btn-circle-download.done svg#arrow {
+    display: none;
+}
+  
+.btn-circle-download.done svg#check {
+    background: red;
+    transform: scale(1);
+    transition: all 0.2s ease;
+    transition-delay: 0.2s;
+}
+  
+@keyframes rubberBand {
+    from {
+      transform: scale3d(1, 1, 1);
+    }
+  
+    30% {
+      transform: scale3d(1.15, 0.75, 1);
+    }
+  
+    40% {
+      transform: scale3d(0.75, 1.15, 1);
+    }
+  
+    50% {
+      transform: scale3d(1.10, 0.85, 1);
+    }
+  
+    65% {
+      transform: scale3d(0.95, 1.05, 1);
+    }
+  
+    75% {
+      transform: scale3d(1.05, 0.95, 1);
+    }
+  
+    to {
+      transform: scale3d(1, 1, 1);
+    }
+}
+  
+.credit {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    transition: all 0.2s ease;
+    -webkit-user-select: none;
+    user-select: none;
+    opacity: 0.6;
+}
+  
+.credit img {
+    width: 72px;
+}
+  
+.credit:hover {
+    transform: scale(0.95);
+}
+
+
+@media (min-width: 900px) and (max-width: 960px) {
+    .main-page {
+      scale: 73%;
+      margin: -13.1rem -11.5rem;
+      overflow-x: hidden;
+    }
+
+    .main-page-payanname {
+      scale: 72%;
+      margin: -29.1rem -11.5rem;
+      background-color: red;
+      overflow-x: hidden;
+    }
+
+    .payan-name-card {
+        scale: 150%;
+    }
+}
+
+@media (min-width: 960px) and (max-width: 1010px) {
+  .main-page {
+    scale: 76%;
+    margin: -11.6rem -10rem;
+    overflow-x: hidden;
+  }
+
+  .main-page-payanname {
+      scale: 76%;
+      margin: -25rem -9.5rem;
+      background-color:#a237b6;
+      overflow-x: hidden;
+    }
+
+    .payan-name-card {
+        scale: 150%;
+    }
+}
+
+@media (min-width: 1010px) and (max-width: 1080px) {
+  .main-page {
+    scale: 82%;
+    margin: -9rem -8rem;
+    overflow-x: hidden;
+  }
+
+  .main-page-payanname {
+      scale: 81%;
+      margin: -20rem -8rem;
+      background-color: #ee653d;
+      overflow-x: hidden;
+    }
+
+    .payan-name-card {
+        scale: 150%;
+    }
+}
+
+@media (min-width: 1080px) and (max-width: 1130px) {
+  .main-page {
+    scale: 87%;
+    margin: -6.2rem -5.7rem;
+    overflow-x: hidden;
+  }
+
+  .main-page-payanname {
+      scale: 86%;
+      margin: -14.8rem -5.8rem;
+      background-color:#009688;
+      overflow-x: hidden;
+    }
+
+    .payan-name-card {
+        scale: 145%;
+    }
+}
+
+@media (min-width: 1130px) and (max-width: 1195px) {
+  .main-page {
+    scale: 90%;
+    margin: -5rem -4.2rem;
+    overflow-x: hidden;
+  }
+
+  .main-page-payanname {
+      scale: 90%;
+      margin: -10.5rem -4rem;
+      background-color:#ffdb8b;
+      overflow-x: hidden;
+    }
+}
+
+@media (min-width: 1195px) and (max-width: 1250px) {
+  .main-page {
+    scale: 96%;
+    margin: -2.3rem -2.1rem;
+    overflow-x: hidden;
+  }
+
+  .main-page-farhangi {
+      scale: 96%;
+      margin: -3rem -2rem;
+      background-color:#3e57bc;
+      overflow-x: hidden;
+    }
+}
+
+@media screen and (max-width: 900px) {
+  .omoor {
+      width: 95%;
+      position: static;
+      text-align: justify;
+      margin: 1rem;
+  }
+  .links1 {
+      width: 95%;
+      position: static;
+      text-align: center;
+      margin: 1rem;
+  }
+  .contact {
+      width: 95%;
+      position: static;
+      text-align: center;
+      margin: 1rem;
+  }
+  .instagram {
+      position: relative;
+      text-align: center;
+      right: 80%;
+      top: 35%;
+  }
+  .gmail {
+      position: relative;
+      text-align: center;
+      right: 44%;
+      top: 5%;
+  }
+  .phone {
+      position: relative;
+      text-align: center;
+      right: 8%;
+      top: -25%;
+  }
+  .next-button {
+      position: relative;
+      top: 0%;
+      right: 0%;
+  }
+  .omoor-far {
+      width: 95%;
+      position: static;
+      text-align: justify;
+      margin: 1rem;
+  }
+  .links-far {
+      width: 95%;
+      position: static;
+      text-align: center;
+      margin: 1rem;
+  }
+  .tashakols-links {
+      width: 95%;
+      position: static;
+      text-align: center;
+      margin: 1rem;
+  }
+  h10 {
+      position: static;
+      top: 95%;
+  }
+  .container-far{
+      width: 95%;
+      top: 20px;
+      left: 12px;
+  }
+}
